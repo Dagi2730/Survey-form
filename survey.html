@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="stylesurv.css" />
+  </head>
+  <body>
+    <h1 id="title">Tell us about your adventure!</h1>
+    <p id="description">Help us improve our travel services by sharing your experience.Thank you!</p>
+    <form id="survey-form"action=''>
+      <fieldset>
+        <label id="name-label" for="first-name">Name <input id="name" name="name" type="text" placeholder="Enter your full name" required /></label>
+        <label id="number-label" for="last-name">Age <input id="number" name="age" type="number" placeholder="Enter your age" min="10" max="100" required /></label>
+        <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+      </fieldset>
+      <fieldset>
+      <label for="travel">How much would you rate the travel?
+          <select id="drpdown" name="dropdown">
+            <option value="">Rate 1-10</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="1">5</option>
+            <option value="1">6</option>
+            <option value="1">7</option>
+            <option value="1">8</option>
+            <option value="1">9</option>
+            <option value="1">10</option>
+            </select>
+      </fieldset>
+      <fieldset>
+        <legend>Would you use this travel agent again?</legend>
+        <label for="Yes"><input id="Yes" type="radio" name="account-type" class="inline" value="definitely" />Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" name="account-type" value="maybe" class="inline" />Maybe</label>
+        <label for="No"><input id="No" type="radio" name="account-type" value="not sure" class="inline" />Not sure</label>
+      </fieldset>
+        <fieldset>
+      <label for="travel">What type of traveler were you?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Budget traveler</option>
+            <option value="2">Luxury traveler</option>
+            <option value="3">Adventure traveler</option>
+            <option value="4">Culture traveler</option>
+            <option value="5">Family traveler</option>
+            <option value="6">Solo traveler</option>
+            <option value="7">Other</option>
+            </select>
+      </fieldset>
+      <fieldset>
+            <legend>Which activities satisfied you?</legend>
+            <label for="history"><input id="history" type="checkbox" name="travel" value="history" class="inline"/>Visiting historical places</label>
+            <label for="hike"><input id="hike" type="checkbox" name="travel" value="hike" class="inline"/>Hiking</label>
+            <label for="camp"><input id="camp" type="checkbox" name="travel" value="camp" class="inline"/>Camping</label>
+            <label for="hike"><input id="hike" type="checkbox" name="travel" value="hike" class="inline"/>Hiking</label>
+            <label for="bike"><input id="bike" type="checkbox" name="travel" value="bike" class="inline"/>Mountain biking</label>
+            <label for="wildlife"><input id="wildlife" type="checkbox" name="travel" value="wildlife" class="inline"/>Wildlife viewing</label>
+            <label for="spa"><input id="spa" type="checkbox" name="travel" value="spa" class="inline"/>Spa treatment</label>
+            <label for="local"><input id="local" type="checkbox" name="travel" value="local" class="inline"/>Trying local specialities</label>
+            <label for="street"><input id="street" type="checkbox" name="travel" value="street" class="inline"/>Street food hopping</label>
+            <label for="photo"><input id="photo" type="checkbox" name="travel" value="photo" class="inline"/>Photography</label>
+      </fieldset>
+          <label for="bio">Any additional feedback?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Write your feedback here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+       
+  </form>
+  </body>     
+</html>
